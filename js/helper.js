@@ -42,7 +42,8 @@ var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<div class="description_div"><ul class="work_description"></ul></div>';;
-var HTMLworkDesList = '<li class="white-text-skills">%data%</li>';
+// var HTMLworkDesList = '<li class="white-text-skills">%data%</li>';
+var HTMLworkDesList = '<li class="normal-description">%data%</li>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
@@ -54,7 +55,7 @@ var HTMLprojectImage = '<img src="%data%">';
 var HTMLcollprojectStart = '<div class="coll-project-entry"></div>';
 var HTMLcollprojectTitle = '<a href="#">%data%</a>';
 var HTMLcollprojectDates = '<div class="date-text">%data%</div>';
-var HTMLcollprojectDescription = '<div class="description_div"><ul class="coll_description"></ul></div>';
+var HTMLcollprojectDescription = '<div class="coll_description_div"><ul class="coll_description"></ul></div>';
 var HTMLcollprojectDesList = '<li class="normal-description">%data%</li>';
 
 // var HTMLcollprojectImage = '<img src="%data%">';

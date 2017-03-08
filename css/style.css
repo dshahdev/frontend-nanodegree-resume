@@ -18,6 +18,33 @@ h6 {
   overflow: auto;
 }
 
+
+.description_div {
+
+  display: none;
+}
+.coll_description_div{
+  display: none;
+}
+.education-entry {
+  display:none;
+}
+.course-entry {
+  display: none;
+}
+
+#workExperience,
+#coll_projects,
+#education,
+#courses{
+  cursor: pointer;
+}
+
+
+.line {
+    width: 98%;
+    border: solid 1px lightgray !important;
+}
 .education-entry,
 .work-entry,
 .project-entry,

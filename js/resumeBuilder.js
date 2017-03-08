@@ -262,7 +262,8 @@
                 $(".work-entry:last").append(HTMLworkDescription);
 
                 element.description.forEach(function(elem) {
-                    var formattedDes = HTMLprojectDesList.replace("%data%", elem);
+                    // var formattedDes = HTMLprojectDesList.replace("%data%", elem);
+                    var formattedDes = HTMLworkDesList.replace("%data%", elem);
                     $(".work_description:last").append(formattedDes);
                 });
 
@@ -366,6 +367,19 @@
             var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
             $("#footerContacts:last").append(formattedLocation);
     }
+
+    $("#workExperience").on("click", function(){
+        $('.description_div').css("display","block");
+    });
+    $("#coll_projects").on("click", function(){
+        $('.coll_description_div').css("display","block");
+    });
+    $("#education").on("click", function(){
+        $(".education-entry").css("display", "block");
+    });
+    $("#courses").on("click", function(){
+        $('.course-entry').css("display", "block");
+    })
 
     bio.displayBio();
     bio.displayBioContacts();
