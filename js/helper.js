@@ -13,7 +13,7 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr>';
+var HTMLheaderRole = '<span class="role_gray">%data%</span><hr>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
@@ -23,37 +23,58 @@ var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><
 var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
-var HTMLbioPic = '<img src="%data%" class="biopic">';
-var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+
+
+var HTMLProskillsStart = '<h3 id="skills-h3">Professional Summary:</h3><ul id="skills"></ul>';
+var HTMLProskills = '<li class="white-text-skills">%data%</li>';
+var HTMLskillsStart = '<h3 id="skills-h3">Skills:</h3><ul id="my_skills"></ul>';
+var HTMLWeb = '<li class="white-text-mySkills"><span class="text-mySkills">Web Technologies:</span><span class="white-text-skills"><em>%data%</em></span></li>';
+var HTMLdatbase = '<li class="white-text-mySkills"><span class="text-mySkills">Database:</span><span class="white-text-skills"><em>%data%</em></span></li>';
+var HTMLlang = '<li class="white-text-mySkills"><span class="text-mySkills">Languages:</span><span class="white-text-skills"><em>%data%</em></span></li>'
+var HTMLLibs = '<li class="white-text-mySkills"><span class="text-mySkills">Libraries and Frameworks:</span><span class="white-text-skills"><em>%data%</em></span></li>'
+var HTMLDevlopment = '<li class="white-text-mySkills"><span class="text-mySkills">Development Enviornment:</span><span class="white-text-skills"><em>%data%</em></span></li>'
+var HTMLProCertificate = '<li class="white-text-mySkills"><span class="text-mySkills">Professional Certificates:</span><span class="white-text-skills"><em>%data%</em></span></li>'
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkDescription = '<div class="description_div"><ul class="work_description"></ul></div>';;
+var HTMLworkDesList = '<li class="white-text-skills">%data%</li>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
+var HTMLprojectDescription = '<div class="description_div"><ul class="pro_description"></ul></div>';
+var HTMLprojectDesList = '<li class="normal-description">%data%</li>';
 var HTMLprojectImage = '<img src="%data%">';
 
+var HTMLcollprojectStart = '<div class="coll-project-entry"></div>';
+var HTMLcollprojectTitle = '<a href="#">%data%</a>';
+var HTMLcollprojectDates = '<div class="date-text">%data%</div>';
+var HTMLcollprojectDescription = '<div class="description_div"><ul class="coll_description"></ul></div>';
+var HTMLcollprojectDesList = '<li class="normal-description">%data%</li>';
+
+// var HTMLcollprojectImage = '<img src="%data%">';
+
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
+var HTMLschoolName = '<a href="#" class="text-mySkills">%data%';
 var HTMLschoolDegree = ' -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+var HTMLschoolMajor = '<em class="text-mySkills"><br>Major: %data%</em>';
+// var HTMLschoolMajor = '<div><br>Major: %data%</div>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLrelCourceStart = '<div class="course-entry "><ul class="course-list"></ul></div>';
+var HTMLcourseList = '<li class="course-description">%data%</li>';
+
+// var HTMLonlineClasses = '<h3>Online Classes</h3>';
+// var HTMLonlineTitle = '<a href="#">%data%';
+// var HTMLonlineSchool = ' - %data%</a>';
+// var HTMLonlineDates = '<div class="date-text">%data%</div>';
+// var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
@@ -86,7 +107,12 @@ function logClicks(x,y) {
 }
 
 $(document).click(function(loc) {
-  // your code goes here!
+
+    var x = loc.pageX;
+    var y = loc.pageY;
+
+    logClicks(x,y);
+
 });
 
 
@@ -103,19 +129,21 @@ var map;    // declares a global map variable
 Start here! initializeMap() is called when page is loaded.
 */
 function initializeMap() {
-
+  console.log("I am initializing map");
   var locations;
 
   var mapOptions = {
     disableDefaultUI: true
   };
+  console.log(mapOptions.disableDefaultUI);
 
+  var locations;
   /*
   For the map to be displayed, the googleMap var must be
   appended to #mapDiv in resumeBuilder.js.
   */
   map = new google.maps.Map(document.querySelector('#map'), mapOptions);
-
+  console.log("map: "+map);
 
   /*
   locationFinder() returns an array of every location string from the JSONs
@@ -234,16 +262,19 @@ function initializeMap() {
 
 }
 
+
 /*
 Uncomment the code below when you're ready to implement a Google Map!
 */
 
 // Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
+window.addEventListener('load', initializeMap);
+
+
 
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
-//window.addEventListener('resize', function(e) {
-  //Make sure the map bounds get updated on page resize
-//  map.fitBounds(mapBounds);
-//});
+window.addEventListener('resize', function(e) {
+  // Make sure the map bounds get updated on page resize
+ map.fitBounds(mapBounds);
+});

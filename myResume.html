@@ -1,20 +1,21 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 
 <html>
 <head>
 
   <meta charset="utf-8">
+
   <title>Resume</title>
+
   <link href="css/style.css" rel="stylesheet">
+
+
 
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
   -->
-
-
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDSjCldllclOvQKWa3KhXHSHZmqBsdUWp8" ></script>
-
+<!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -22,31 +23,42 @@
   <div id="main">
 
     <div id="header" class="center-content clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
+      <h1 id="name"></h1>
+      <span id="role"></span>
+      <hr>
+      <ul id="topContacts" class="flex-box">
+          <li class="flex-item">
+            <span class="orange-text">mobile:</span>
+            <span class="white-text"></span>
+          </li>
+          <li class="flex-item">
+            <span class="orange-text">email:</span>
+            <span class="white-text"></span>
+          </li>
+          <li class="flex-item">
+            <span class="orange-text">github:</span>
+            <a href="#" class="white-text"></a>
+          </li>
+          <li class="flex-item">
+            <span class="orange-text">location:</span>
+            <span class="white-text"></span>
+          </li>
+      </ul>
     </div>
 
     <div style="clear: both;"></div>
-
     <div id="workExperience" class="gray">
       <h2>Work Experience</h2>
     </div>
     <div id="projects">
       <h2>Projects</h2>
     </div>
-    <div id="coll_projects">
-      <h2>College Projects</h2>
-    </div>
     <div id="education" class="gray">
       <h2>Education</h2>
     </div>
-    <div id="courses" class="gray">
-      <h2>Related courses</h2>
-    </div>
-
     <div id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
     </div>
-
     <div id="lets-connect" class="dark-gray">
       <h2 class="orange center-text">Let's Connect</h2>
         <ul id="footerContacts" class="flex-box">
@@ -54,12 +66,21 @@
     </div>
   </div>
 
+
+
   <script src="js/jQuery.js"></script>
 
-  <!-- More on helper.js in the class -->
+
   <script src="js/helper.js"></script>
-  <script src="js/resumeBuilder.js"></script>
+
+
+  <script src="resumeBuilder2.js"></script>
+
+
+
+
   <script>
+
 
 
     if(document.getElementsByClassName('flex-item').length === 0) {
@@ -74,21 +95,15 @@
     if(document.getElementsByClassName('project-entry').length === 0) {
       document.getElementById('projects').style.display = 'none';
     }
-
     if(document.getElementsByClassName('education-entry').length === 0) {
       document.getElementById('education').style.display = 'none';
     }
-
-    // if(document.getElementsByClassName('course-entry').length === 0){
-    //   document.getElementById('courses').style.display = 'none';
-
-    // }
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('lets-connect').style.display = 'none';
     }
-   if(document.getElementById('map') === null) {
-       document.getElementById('mapDiv').style.display = 'none';
-     }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = 'none';
+    }
   </script>
 </body>
 </html>
