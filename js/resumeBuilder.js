@@ -36,7 +36,7 @@
         "Skills": {
             "WebTechnologies": "HTML/HTML5, CSS/CSS3, JavaScript, AJAX, MediaQuery, SASS",
             "Database": "MYSQL, SQL SERVER, Oracle",
-            "Languages": "JavaScript, Java,PHP",
+            "Languages": "JavaScript, Java, PHP",
             "LibrariesFrameworks": "AngularJS, RequireJS, Grunt, Karma/Jasmine, Git",
             "DevelopmentEnvironments": "Sublime Text2, Visual Studio, Eclipse, jBoss, Squirrel, NetBeans",
             "ProfessionalCertification": "SCJP, MIT certification on Tackling Challenges of Big Data"
@@ -122,20 +122,22 @@
 
      var education = {
         "schools": [
+
+            {
+                "name": "Fairleigh Dickinson University",
+                "location": "Teaneck, NJ, US",
+                "degree": "Masters",
+                "major": "Computer Science"
+            },
             {
                 "name": "Gujarat University",
                 "location": "Ahmedabad, Gujarat, India",
                 "degree": "Bachelor in Commerce.",
                 "major": "Accountancy and Business Manangement"
 
-            },
-            {
-                "name": "Fairleigh Dickinson University",
-                "location": "Teaneck, NJ, US",
-                "degree": "Masters",
-                "major": "Computer Science"
             }
         ],
+
         "relatedcourses": [
                     "Software Engineering",
                     "Mobile Application Developmen",
@@ -238,6 +240,7 @@
             }
 
         ],
+
         "displayWork": function() {
 
             work.jobs.forEach(function(element){
@@ -369,16 +372,37 @@
     }
 
     $("#workExperience").on("click", function(){
-        $('.description_div').css("display","block");
+        $('.description_div').slideToggle(0, function(){
+            $('.collapseExp').text(function(){
+                return $('.description_div').is(":visible")? "Collapse" : "Expand";
+            });
+        });
+
     });
+
     $("#coll_projects").on("click", function(){
-        $('.coll_description_div').css("display","block");
+        $('.coll_description_div').slideToggle(0, function(){
+            $('.collapseExp1').text(function(){
+                return $('.coll_description_div').is(":visible")? "Collapse" : "Expand";
+            });
+        });
     });
+
+
+
     $("#education").on("click", function(){
-        $(".education-entry").css("display", "block");
+        $(".education-entry").slideToggle(0, function(){
+            $('.collapseExp2').text(function(){
+                return $('.education-entry').is(":visible")? "Collapse" : "Expand";
+            });
+        });;
     });
     $("#courses").on("click", function(){
-        $('.course-entry').css("display", "block");
+        $('.course-entry').slideToggle(0, function(){
+            $('.collapseExp3').text(function(){
+                return $('.course-entry').is(":visible")? "Collapse" : "Expand";
+            });
+        });;
     })
 
     bio.displayBio();

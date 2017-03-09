@@ -41,6 +41,31 @@ h6 {
 }
 
 
+
+.collapseExp {
+  display: inline;
+  margin-left: 2%;
+  color: #f5a623;
+}
+
+.collapseExp1 {
+  display: inline;
+  margin-left: 2%;
+  color: #f5a623;
+}
+
+.collapseExp2 {
+  display: inline;
+  margin-left: 2%;
+  color: #f5a623;
+}
+
+.collapseExp3 {
+  display: inline;
+  margin-left: 2%;
+  color: #f5a623;
+}
+
 .line {
     width: 98%;
     border: solid 1px lightgray !important;
@@ -139,6 +164,7 @@ a {
 #skills-h3 {
   color: #f5ae23;
   display: none;
+  padding-left: 0px;
 }
 
 .orange {
@@ -156,12 +182,13 @@ a {
 .white-text-skills {
   color: #dcdada;
   line-height: 1.5em;
+
 }
 
 .white-text-mySkills {
   color: #dcdada;
   line-height: 1.5em;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 .normal-description {
   color: #757070;
