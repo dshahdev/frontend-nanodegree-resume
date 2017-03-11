@@ -137,6 +137,21 @@
 
             }
         ],
+        "onlinecourses" :[
+            {
+                "title": "Front-End Web Developer Nanodegree",
+                "school": "Udacity",
+                "date"  : "Feb 2017 - current",
+                "url"   : "https://www.udacity.com/"
+            },
+            {
+                "title": "SCJP Certification",
+                "school": "Oracle",
+                "date"  : "Feb 2013",
+                "url"   : "http://www.oracle.com/"
+            },
+
+        ],
 
         "relatedcourses": [
                     "Software Engineering",
@@ -170,6 +185,25 @@
 
         },
 
+         "displayOnlinecourses": function(){
+            $("#online_courses").append(HTMLonlineClasses);
+
+            education.onlinecourses.forEach(function(element) {
+                var formattedTitle =  HTMLonlineTitle.replace("%data%",element.title);
+                $('.online-entry').append(formattedTitle);
+
+                var formattedSchool = HTMLonlineSchool.replace("%data%", element.school);
+                 $('.online-entry').append(formattedSchool);
+
+                var foramttedDates = HTMLonlineDates.replace("%data%", element.date);
+                $('.online-entry').append(foramttedDates);
+
+                var formattedUrl = HTMLonlineURL.replace("%data%", element.url);
+                $('.online-entry').append(formattedUrl);
+            })
+        },
+
+
         "displayRelatedCourses": function(){
             $('#courses').append(HTMLrelCourceStart);
 
@@ -178,9 +212,9 @@
                 $('.course-list').append(formattedCourList);
             });
 
-            // var formattedDes = HTMLprojectDesList.replace("%data%", elem);
-            //         $(".work_description:last").append(formattedDes);
+
         }
+
 
     };
 
@@ -277,6 +311,8 @@
 
         "displayWorkLocation": function(){
             $('#mapDiv').append(googleMap);
+
+
         }
 
 
@@ -388,8 +424,6 @@
         });
     });
 
-
-
     $("#education").on("click", function(){
         $(".education-entry").slideToggle(0, function(){
             $('.collapseExp2').text(function(){
@@ -397,13 +431,25 @@
             });
         });;
     });
+
     $("#courses").on("click", function(){
         $('.course-entry').slideToggle(0, function(){
             $('.collapseExp3').text(function(){
                 return $('.course-entry').is(":visible")? "Collapse" : "Expand";
             });
         });;
-    })
+    });
+
+    $("#online_courses").on("click", function(){
+        console.log("I am clicked");
+        $('.online-entry').slideToggle(0, function() {
+            console.log("I am clicked too");
+            $('.collapseExp4').text(function(){
+                return $('.online-entry').is(":visible")? "Collapse" : "Expand"
+            })
+        })
+    });
+
 
     bio.displayBio();
     bio.displayBioContacts();
@@ -411,6 +457,7 @@
     bio.displaySkills();
 
     education.displayEduction();
+    education.displayOnlinecourses();
     education.displayRelatedCourses();
 
     work.displayWork();

@@ -71,7 +71,15 @@ var HTMLschoolMajor = '<em class="text-mySkills"><br>Major: %data%</em>';
 var HTMLrelCourceStart = '<div class="course-entry "><ul class="course-list"></ul></div>';
 var HTMLcourseList = '<li class="course-description">%data%</li>';
 
-// var HTMLonlineClasses = '<h3>Online Classes</h3>';
+var HTMLonlineClasses = '<div class="online-entry"></div>';
+var HTMLonlineTitle = '<a href="#" class="online_cor">%data% </a>';
+var HTMLonlineSchool = '<span class="online_cor1">%data%</span>';
+var HTMLonlineDates = '<div class="online_cor1">%data%</div>';
+var HTMLonlineURL = '<a href="#" class="online_cor1">%data%</a>';
+// var HTMLschoolLocation = '<div class="location-text">%data%</div>';
+// var HTMLschoolMajor = '<em class="text-mySkills"><br>Major: %data%</em>';
+
+// var HTMLonlineClasses = '<div class="onlineCour-entry"><h2>Online Classes<p class="collapseExp4">(Expand)</h2><ul class="onlinecourse-list"></ul></div>';
 // var HTMLonlineTitle = '<a href="#">%data%';
 // var HTMLonlineSchool = ' - %data%</a>';
 // var HTMLonlineDates = '<div class="date-text">%data%</div>';

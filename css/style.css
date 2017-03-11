@@ -23,13 +23,20 @@ h6 {
 
   display: none;
 }
+
 .coll_description_div{
   display: none;
 }
+
 .education-entry {
   display:none;
 }
+
 .course-entry {
+  display: none;
+}
+
+.online-entry {
   display: none;
 }
 
@@ -66,14 +73,22 @@ h6 {
   color: #f5a623;
 }
 
+.collapseExp4 {
+  display: inline;
+  margin-left: 2%;
+  color: #f5a623;
+}
+
 .line {
     width: 98%;
     border: solid 1px lightgray !important;
 }
+
 .education-entry,
 .work-entry,
 .project-entry,
-.coll-project-entry {
+.coll-project-entry,
+.onlinecourse-list {
   padding: 0 5%;
 }
 
@@ -201,6 +216,18 @@ a {
   margin-left: 9%;
 }
 
+.online_cor1 {
+  margin-left: 6%;
+  font-style: italic;
+  font-size: 16PX;
+  color: #716968;
+  line-height: 16px;
+    /* float: left; */
+}
+.online_cor {
+  margin-left: 5%;
+
+}
 
 .text-mySkills {
   font-weight: bold;
