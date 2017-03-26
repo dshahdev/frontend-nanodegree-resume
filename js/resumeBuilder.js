@@ -228,7 +228,7 @@
             "dates": "June 2016 - current",
             "location":  "New York city, NY",
             "description": [
-                        "EXCALIBUR- INVENTORY AND OUTSOURCE PRODUCTION MANAGEMENT"
+                        "EXCALIBUR- INVENTORY AND OUTSOURCE PRODUCTION MANAGEMENT",
                         "Developed Front-end web pages with AngularJS - a JavaScript Framework using DOM, HTML5, CSS3, and JavaScrip",
                         "Used RequireJS library to speed up the dependency navigation and modularization of the application into smaller manageable parts",
                         "Worked with Business Analyst and Back-end development team during requirement analysis, implementation and production incidents",
@@ -243,10 +243,10 @@
             "dates": "Jan 2016 - May 2016",
             "location":  "Parsippany, NJ",
              "description": [
-                        "DIGI-NERVE-DEVICE DATA AUTOMATION PROJECT"
+                        "DIGI-NERVE-DEVICE DATA AUTOMATION PROJECT",
                         "Working on a website of a startup project for device monitoring system where clients can monitor and control their devices remotely",
                         "Designed the workflow of the website using manual sketches and free wire framing tool like wireframe.cc",
-                        "Used ui-router, ng-router, Dependency Injection, built-in directives, promises and deferred via asynchronous processing in NodeJS in AngularJS"
+                        "Used ui-router, ng-router, Dependency Injection, built-in directives, promises and deferred via asynchronous processing in NodeJS in AngularJS",
                         "Developed prototype in AngularJS with a RESTFul interface in NodeJS connecting to MySQL database",
                         "Used git repository to manage development, fixes and production release branches",
                         "Used AmgularJS and Restful services; Used SASS, RequireJS and other components for robust user experience"
