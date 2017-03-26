@@ -26,9 +26,9 @@
         "welcomeMessage": "Welcome to Darshana's Resume Page!",
         // "skills": ['HTML', 'CSS', 'JavaScript', 'jQuery', 'AngularJS','Restful'],
         "pro_summery": [
-                "Strong experience in JavaScript, HTML/HTML5, CSS/CSS3, RequireJS, AngularJS, SASS",
+                "Strong experience in AngularJS, JavaScript, HTML/HTML5, CSS/CSS3, RequireJS,SASS",
                 "Created Single Page Application(SPA) using DOM, jQuery, JavaScript, AngularJS, Bootstrap library, and RESTful Service",
-                "Created E-commerce websites using PHP, ASP.NET, Java, JSP, Servlet, MySQL and SQL Server",
+                "Created E-commerce websites using PHP, Java, MySQL and SQL Server",
                 "Completed MS in Computer Science from FDU, Teaneck, NJ — Summer 2016 (GPA: 3.8 / 4.0)"
 
             ],
@@ -37,8 +37,8 @@
             "WebTechnologies": "HTML/HTML5, CSS/CSS3, JavaScript, AJAX, MediaQuery, SASS",
             "Database": "MYSQL, SQL SERVER, Oracle",
             "Languages": "JavaScript, Java, PHP",
-            "LibrariesFrameworks": "AngularJS, RequireJS, Grunt, Karma/Jasmine, Git",
-            "DevelopmentEnvironments": "Sublime Text2, Visual Studio, Eclipse, jBoss, Squirrel, NetBeans",
+            "LibrariesFrameworks": "AngularJS, RequireJS, Grunt, Karma/Jasmine, Grunt",
+            "DevelopmentEnvironments": "Sublime Text2, Visual Studio, Eclipse, jBoss, Squirrel, Git",
             "ProfessionalCertification": "SCJP, MIT certification on Tackling Challenges of Big Data"
         },
 
@@ -228,27 +228,28 @@
             "dates": "June 2016 - current",
             "location":  "New York city, NY",
             "description": [
-                        "Developed Front-end web application with AngularJS - a JavaScript Framework using DOM, HTML5, CSS3, and JavaScrip",
+                        "EXCALIBUR- INVENTORY AND OUTSOURCE PRODUCTION MANAGEMENT"
+                        "Developed Front-end web pages with AngularJS - a JavaScript Framework using DOM, HTML5, CSS3, and JavaScrip",
                         "Used RequireJS library to speed up the dependency navigation and modularization of the application into smaller manageable parts",
-                        "Worked with Business Analyst and Back-end development team to understand the workflow, current state and requirements",
+                        "Worked with Business Analyst and Back-end development team during requirement analysis, implementation and production incidents",
                         "Assisted back-end team in finalizing the RESTful interface and initial database design",
-                        "Contributed in performance improvements through module redesign and MySQL optimization exercises",
-                        "Briefly involved in preliminary design discussions and provided quick proof-of-concepts for the user interface and dashboard design",
-                        "Used AngularJS and Java RESTful services; Used SASS, requireJS and other components for robust user experience"
+                        "Contributed in performance improvements through module redesign and MySQL optimization exercises"
                         ]
             },
 
             {
-            "employer": "AUTOMATION REASEARCH PROJECT at FDU",
+            "employer": "INDEPENDENT PROJECT",
             "title": "JR. Front-end Developer",
             "dates": "Jan 2016 - May 2016",
-            "location":  "Teaneck, NJ",
+            "location":  "Parsippany, NJ",
              "description": [
-                        "Working on a device monitoring system where clients can monitor and control their devices remotely",
+                        "DIGI-NERVE-DEVICE DATA AUTOMATION PROJECT"
+                        "Working on a website of a startup project for device monitoring system where clients can monitor and control their devices remotely",
                         "Designed the workflow of the website using manual sketches and free wire framing tool like wireframe.cc",
+                        "Used ui-router, ng-router, Dependency Injection, built-in directives, promises and deferred via asynchronous processing in NodeJS in AngularJS"
                         "Developed prototype in AngularJS with a RESTFul interface in NodeJS connecting to MySQL database",
                         "Used git repository to manage development, fixes and production release branches",
-                        "Briefly involved in services created on Linux Ubuntu server on a Raspberry Pi hardware for clients to install server at desired locations"
+                        "Used AmgularJS and Restful services; Used SASS, RequireJS and other components for robust user experience"
                         ]
             },
 
@@ -328,13 +329,12 @@
                 "dates": "JAN 2016 - MAY 2016",
                 "description": [
 
-                    "Developed Online Shopping Application as part of ‘Building E-Commerce System’ class with weekly review by Professor",
+                    "Developed Online Shopping Application as part of ‘Building E-Commerce System’ class with weekly reviewed by Professor",
                     "Developed web application using AngularJS framework- and related skills like DOM, HTML5, CSS3, SASS, Javascript, Ajax and Java",
-                    "Used ui-router, ng-router, Dependency Injection and built-in detectives in AngularJS for robustness",
                     "Used data-binding with the use of Controllers, Factories, Services and integrated with RESTful Java backend services",
                     "Accomplished responsive design using bootstrap, Promises and Deferred via asynchronous processing in NodeJS",
-                    "Built RESTful interface for the application using Java J2EE (JBoss EAP 6) connecting to MySQL database",
-                    "Used SASS extensively in the project and achieved maintainability and extensibility for CSS code"
+                    "Built RESTful interface for the application using Java J2EE (JBoss EAP 6) connecting to MySQL database"
+
                     ]
             },
             {
