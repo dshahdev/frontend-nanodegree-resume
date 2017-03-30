@@ -342,8 +342,20 @@ span {
 }
 
 @media only screen and (max-width: 749px) {
-  #skills-h3,
+  #skills-h3 {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+  }
   .biopic {
     display: block;
   }
+  .white-text-mySkills {
+    color: #dcdada;
+    line-height: 1.5em;
+    margin-left: 14%;
+  }
+  .role_gray {
+    color: #dcdada;
+    display: block;
 }
