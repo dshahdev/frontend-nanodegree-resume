@@ -302,27 +302,30 @@ span {
 
 /* Media queries to handle various device widths */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   #lets-connect {
     margin-top: 5%;
   }
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (min-width:900px) {
   .biopic {
     width: 175px;
   }
 }
 
-@media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
+@media only screen and (min-width: 750px) {
+  #skills-h3{
+     display: block;
   }
-  .biopic {
+   .biopic {
     width: 150px;
   }
   .welcome-message {
     display: none;
+  }
+  #lets-connect {
+    margin-top: 10%;
   }
 }
 
@@ -338,7 +341,7 @@ span {
   padding-bottom: 5%;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (max-width: 749px) {
   #skills-h3,
   .biopic {
     display: block;

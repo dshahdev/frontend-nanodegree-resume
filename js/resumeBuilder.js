@@ -1,14 +1,3 @@
-// Hello.
-//
-// This is JSHint, a tool that helps to detect errors and potential
-// problems in your JavaScript code.
-//
-// To start, simply enter some JavaScript anywhere on this page. Your
-// report will appear on the right side.
-//
-// Additionally, you can toggle specific options in the Configure
-// menu.
-
 
 
     /* Bio Section ------------------------------ */
@@ -19,12 +8,12 @@
         "contacts": {
             "mobile": "973-978-2936",
             "email": "dshahnj@gmail.com",
-            "github": "dshahdev.git.io",
+            "github": "dshahdev.github.io",
             "location": "Parsippany, NJ"
         },
-        // "bioPic": "images/front.jpg",
+
         "welcomeMessage": "Welcome to Darshana's Resume Page!",
-        // "skills": ['HTML', 'CSS', 'JavaScript', 'jQuery', 'AngularJS','Restful'],
+
         "pro_summery": [
                 "Strong experience in AngularJS, JavaScript, HTML/HTML5, CSS/CSS3, RequireJS,SASS",
                 "Created Single Page Application(SPA) using DOM, jQuery, JavaScript, AngularJS, Bootstrap library, and RESTful Service",
@@ -240,13 +229,13 @@
             {
             "employer": "INDEPENDENT PROJECT",
             "title": "JR. Front-end Developer",
-            "dates": "Jan 2016 - May 2016",
+            "dates": "Jan 2016 - Current",
             "location":  "Parsippany, NJ",
              "description": [
                         "DIGI-NERVE-DEVICE DATA AUTOMATION PROJECT",
                         "Working on a website of a startup project for device monitoring system where clients can monitor and control their devices remotely",
                         "Designed the workflow of the website using manual sketches and free wire framing tool like wireframe.cc",
-                        "Used ui-router, ng-router, Dependency Injection, built-in directives, promises and deferred via asynchronous processing in NodeJS in AngularJS",
+                        "Used ui-router /ng-router, Dependency Injection, built-in directives, promises and deferred via asynchronous processing in NodeJS in AngularJS",
                         "Developed prototype in AngularJS with a RESTFul interface in NodeJS connecting to MySQL database",
                         "Used git repository to manage development, fixes and production release branches",
                         "Used AmgularJS and Restful services; Used SASS, RequireJS and other components for robust user experience"
