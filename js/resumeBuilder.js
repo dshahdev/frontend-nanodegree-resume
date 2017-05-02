@@ -2,6 +2,9 @@
 
     /* Bio Section ------------------------------ */
 
+
+
+
      var bio = {
         "name": "Darshana Shah",
         "role": "Front-end Developer",
@@ -15,6 +18,7 @@
         "welcomeMessage": "Welcome to Darshana's Resume Page!",
 
         "pro_summery": [
+                "More than 5 years of experience in overall development including 2 years in building responsive web applications using AngularJS",
                 "Strong experience in AngularJS, JavaScript, HTML/HTML5, CSS/CSS3, RequireJS,SASS",
                 "Created Single Page Application(SPA) using DOM, jQuery, JavaScript, AngularJS, Bootstrap library, and RESTful Service",
                 "Created E-commerce websites using PHP, Java, MySQL and SQL Server",
